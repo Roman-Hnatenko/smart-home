@@ -52,3 +52,5 @@ Mkfile.old
 dkms.conf
 
 db.sqlite3
+
+README.rst
