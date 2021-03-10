@@ -6,10 +6,10 @@ from .form import ControllerForm
 
 
 class ControllerView(FormView):
+
+    success_url = reverse_lazy('form')
     form_class = ControllerForm
     template_name = 'core/control.html'
-    success_url = reverse_lazy('form')
-
     def get_context_data(self, **kwargs):
         context = super(ControllerView, self).get_context_data()
         context['data'] = {}
